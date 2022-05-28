@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "scripts": {
         "dev": "parcel ./src/index.pug ./src/*.pug --dist-dir ./dist",
-        "build": "npm run clean && parcel build ./src/*.pug --dist-dir ./dist && npm run cp",
+        "build": "npm run clean && parcel build ./src/*.pug --dist-dir ./ && npm run cp",
         "clean": "rm -rfd ./dist",
         "cp": "cp ./src/sitemap.xml ./sitemap.xml"
     },
