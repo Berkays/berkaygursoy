@@ -1,0 +1,22 @@
+{
+    "name": "berkaygursoy",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "parcel ./src/index.pug ./src/*.pug --dist-dir ./dist",
+        "build": "npm run clean && parcel ./src/*.pug --dist-dir ./dist",
+        "clean": "rm -rfd ./dist"
+    },
+    "browserslist": "> 2%, not dead",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Berkays/berkaygursoy.git"
+    },
+    "author": "Berkay Gursoy",
+    "license": "MIT",
+    "homepage": "https://github.com/Berkays/berkaygursoy#readme",
+    "devDependencies": {
+        "@parcel/transformer-pug": "^2.6.0",
+        "@parcel/transformer-sass": "^2.6.0",
+        "parcel": "^2.6.0"
+    }
+}
