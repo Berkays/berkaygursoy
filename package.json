@@ -4,7 +4,7 @@
     "scripts": {
         "dev": "parcel ./src/index.pug ./src/*.pug --dist-dir ./dist",
         "build": "npm run clean && parcel build ./src/*.pug --dist-dir ./ && npm run cp",
-        "clean": "rm -rfd ./dist",
+        "clean": "rm -rfd ./dist && rm -rfd ./*.css ./*.map ./*.html ./*.js ./*.ico ./*.jpeg ./*.xml ./assets",
         "cp": "cp ./src/sitemap.xml ./sitemap.xml"
     },
     "browserslist": "> 2%, not dead",
