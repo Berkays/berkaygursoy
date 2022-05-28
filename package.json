@@ -3,8 +3,9 @@
     "version": "1.0.0",
     "scripts": {
         "dev": "parcel ./src/index.pug ./src/*.pug --dist-dir ./dist",
-        "build": "npm run clean && parcel build ./src/*.pug --dist-dir ./",
-        "clean": "rm -rfd ./dist"
+        "build": "npm run clean && parcel build ./src/*.pug --dist-dir ./ && npm run cp",
+        "clean": "rm -rfd ./dist",
+        "cp": "cp ./src/sitemap.xml ./sitemap.xml"
     },
     "browserslist": "> 2%, not dead",
     "repository": {
