@@ -1,3 +1,6 @@
+// import '../node_modules/bootstrap/js/dist/collapse';
+// import '../node_modules/bootstrap/js/dist/button';
+import * as bootstrap from 'bootstrap';
 
 window.addEventListener('load', function () {
     let path = window.location.pathname.slice(1);
