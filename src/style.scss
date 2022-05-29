@@ -191,14 +191,11 @@ section#projects {
 	}
 
 	.profile-img {
-		// margin-left: 80px;
-		// margin-right: 80px;
 		margin-top: 1rem;
 		max-width: 200px;
 		height: 100%;
 		aspect-ratio: 1;
 		object-fit: cover;
-		// flex: 1;
 		border-radius: 50%;
 
 		// box-shadow: 1px 4px 19px -1px rgba(158, 158, 158, 0.84);
@@ -435,12 +432,15 @@ ul.projects-list {
 
 			div {
 				padding: 0.25rem;
-				width: 36px;
+				width: 48px;
 				a {
 					display: block;
 
 					svg {
 						fill: none;
+
+						width: 32px;
+						height: 32px;
 					}
 
 					&:hover {
