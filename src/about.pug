@@ -1,13 +1,13 @@
 extends layout.pug
 
 block content
-	.body-container
-		.body-title.text-white
+	section#about.body-container.container
+		.body-title.text-white.text-center.text-sm-start
 			b About Me
-		div(style="display:flex")
-			.content(style="flex:1")
+		div.row
+			.content.col-12.col-md-8.order-2.order-md-1
 				| Hello! My name is Berkay and I enjoy creating things that live on the internet. I have interest in pretty much anything that involves some form of technology. My passion for computers started with video games when I was couple of years old. This enthusiasm continued with me starting programming with C# and doing hobby projects in most of my free time back in around 2010 which corresponds to over 10 years of programming experience.
-			img.profile-img(src="./assets/photo.jpeg", alt="Profile Image")
+			img.profile-img.col-12.col-md-4.order-1.order-md-2.mx-auto.mb-4.mb-md-0(src="./assets/photo.jpeg", alt="Profile Image")
 		.content
 			| Today, I am still excited for the new improvements, methodologies and the technologies in the field and trying to learn as much as I can.
 			| I have an extra interest mainly for software architecture and backend engineering.

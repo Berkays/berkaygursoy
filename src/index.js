@@ -1,3 +1,4 @@
+import * as bootstrap from 'bootstrap';
 
 window.addEventListener('load', function () {
     let path = window.location.pathname.slice(1);

@@ -1,8 +1,8 @@
 extends layout.pug
 
 block content
-		.body-container
-			.body-title.text-white
+		section#projects.body-container.container
+			.body-title.text-white.text-center.text-sm-start
 				b My Projects
 			hr.color-int-border
 			ul.projects-list 
@@ -11,9 +11,10 @@ block content
 						.project-title Yeelight C# Library
 						.project-description-container
 							.project-description C#.NET library for controllin Xiaomi Yeelight smart bulb devices over local network. Fluent interface is used to simplify the library consumption.
-							.project-stack-container 
+							.project-stack-container
 								span Tech Stack:
-								div C#
+								.row
+									span.col C#
 							.project-links 
 								div
 									a(href="https://www.nuget.org/packages/YeelightNET" aria-label="Nuget" target="_blank" rel="noreferrer")
@@ -32,10 +33,11 @@ block content
 						.project-title Paratrooper
 						.project-description-container
 							.project-description Fast and Accurate word-by-word text similarity and text clustering API. Built with C# and Azure app functions for serverless architecture.
-							.project-stack-container 
+							.project-stack-container
 								span Tech Stack:
-								div C#
-								div Azure App Functions
+								.row
+									span.col C#
+									span.col Azure App Functions
 							.project-links 
 								div
 									a(href="https://rapidapi.com/berkaygursoy/api/paratrooper" aria-label="web" target="_blank" rel="noreferrer")
@@ -50,18 +52,18 @@ block content
 						.project-description-container
 							.project-description 
 								div A web application with a set of tools to speed up some Turkish accounting pipeline for invoices.
-							.project-stack-container 
+							.project-stack-container
 								span Tech Stack:
-								div NodeJS/Typescript
-								div Docker 
-								div PostgreSQL
-								div React
-							.project-stack-container 
-								div C#/Azure Functions
-								div RabbitMQ
-								div Heroku 
-								div Python 
-								div Tensorflow/ML
+								.row
+									span.col NodeJS/Typescript
+									span.col Docker 
+									span.col PostgreSQL
+									span.col React
+									span.col C#/Azure Functions
+									span.col RabbitMQ
+									span.col Heroku 
+									span.col Python 
+									span.col Tensorflow/ML
 							.project-links 
 								div
 									a(href="https://muhaseberobotu.com" aria-label="web" target="_blank" rel="noreferrer")
@@ -78,9 +80,10 @@ block content
 								div An embedded firmware and a mobile application frontend for controlling a custom built clock. Clock is shaped in form of a circular projection of the world where an LED strip is used to simulate lightning from the sun. React Native application talks to the microcontroller through Bluetooth protocol and can control various properties of the clock.
 							.project-stack-container 
 								span Tech Stack:
-								div C++
-								div React Native
-								div Typescript
+								.row
+									span.col C++
+									span.col React Native
+									span.col Typescript
 							.project-links 
 								div
 									a(href="https://github.com/Berkays/WorldClockSystem" aria-label="Github" target="_blank" rel="noreferrer")
@@ -100,12 +103,13 @@ block content
 								div Pinsel is a fully decentralized art licensing and backing platform which aims to provide lower comission costs and reduce infrastructure expenses by utilizing p2p protocols such as IPFS and Ethereum Blockchain.
 							.project-stack-container 
 								span Tech Stack:
-								div Docker 
-								div JS/HTML/CSS
-								div NodeJS
-								div Ethereum
-								div Solidity 
-								div IPFS
+								.row 
+									span.col Docker 
+									span.col JS/HTML/CSS
+									span.col NodeJS
+									span.col Ethereum
+									span.col Solidity 
+									span.col IPFS
 							.project-links 
 								div
 									a(href="https://github.com/Berkays/Pinsel" aria-label="Github" target="_blank" rel="noreferrer")
@@ -120,10 +124,11 @@ block content
 								div Instagram-like photo application where people follow topics instead of other people. Uses C# Xamarin for Android application. Javascript with MongoDB is used for backend.
 							.project-stack-container 
 								span Tech Stack:
-								div C#
-								div Xamarin Android
-								div Javascript
-								div MongoDB
+								.row
+									span.col C#
+									span.col Xamarin Android
+									span.col Javascript
+									span.col MongoDB
 							.project-links 
 								div
 									a(href="https://github.com/Berkays/DavinciApi" aria-label="Github" target="_blank" rel="noreferrer")
