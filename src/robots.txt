@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /assets/berkaygursoy_resume_2022.pdf
