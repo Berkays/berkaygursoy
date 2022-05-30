@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	padding-bottom: calc(var(--footer-height) * 1.6);
+	padding-bottom: calc(var(--footer-height) * 1.5);
 	font-family: 'Open Sans', sans-serif;
 
 	background-color: var(--color-bg);
@@ -21,7 +21,7 @@ body {
 	--color-line: #8d4ad3;
 	--color-int: #00b400;
 
-	--footer-height: 80px;
+	--footer-height: 100px;
 }
 
 .color-int-border {
@@ -116,7 +116,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	height: var(--footer-height);
+	max-height: var(--footer-height);
 	width: 100%;
 
 	text-align: center;
@@ -124,8 +124,8 @@ footer {
 
 	color: white;
 
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 	.footer-container {
 		display: flex;
 		flex-direction: column;
@@ -134,6 +134,11 @@ footer {
 		font-weight: 700;
 		span {
 			padding: 0.5rem 0 0.5rem 0;
+		}
+
+		svg {
+			width: 24px;
+			height: 24px;
 		}
 	}
 }
