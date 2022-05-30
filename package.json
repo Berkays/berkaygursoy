@@ -4,8 +4,8 @@
     "scripts": {
         "dev": "parcel ./src/index.pug ./src/*.pug --dist-dir ./dist",
         "build": "npm run clean && parcel build ./src/*.pug --dist-dir ./ && npm run cp",
-        "clean": "rm -rfd ./dist && rm -rfd ./*.css ./*.map ./*.html ./*.js ./*.ico ./*.jpeg ./*.xml ./assets",
-        "cp": "cp ./src/sitemap.xml ./sitemap.xml"
+        "clean": "rm -rfd ./dist && rm -rfd ./*.css ./*.map ./*.html ./*.js ./*.ico ./*.jpeg ./*.xml ./assets ./robots.txt",
+        "cp": "cp ./src/sitemap.xml ./sitemap.xml && cp./src/robots.txt ./robots.txt"
     },
     "browserslist": "> 2%, not dead",
     "repository": {
