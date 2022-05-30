@@ -57,6 +57,16 @@ a {
 	margin-bottom: auto;
 	color: black;
 	fill: none;
+
+	a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		svg {
+			width: 100%;
+			height: 100%;
+		}
+	}
 }
 
 .navbar-title {
@@ -111,6 +121,7 @@ a {
 		box-shadow: none;
 	}
 }
+
 footer {
 	display: flex;
 	position: absolute;
