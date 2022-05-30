@@ -1,26 +1,27 @@
 doctype html
 html(lang="en")
-	head
-	meta(charset="UTF-8")
-	meta(http-equiv="X-UA-Compatible" content="IE=edge")
-	meta(name="viewport" content="width=device-width, initial-scale=1.0")
-	title Berkay Gursoy - Software Engineer
-	link(rel="icon" href="./favicon.ico")
-	meta(name="description" content="Software engineer | Software developer | Backend engineer | C# | Typescript | React | Node")
-	meta(name="author" content="Berkay Gursoy")
-	meta(property="og:url" content="https://berkaygursoy.com")
-	meta(property="og:site_name" content="BerkayGursoy")
-	meta(property="og:title" content="BerkayGursoy")
-	meta(property="og:description" content="Software engineer | Software developer | Backend engineer | C# | Typescript | React | Node")
-	link(rel="stylesheet", href="custom.scss")
-	link(rel="stylesheet", href="style.scss")
-	link(rel="preconnect" href="https://fonts.googleapis.com")
-	link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-	link(href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&display=swap" rel="stylesheet")
-	script(src="./index.js" type="module" defer)
-	body
-		include components/header.pug
-		include components/links.pug
-		block content
-	footer
-		include components/footer.pug
+  head
+  meta(charset="UTF-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  title Berkay Gursoy - Software Engineer
+  link(rel="icon" href="./favicon.ico")
+  meta(name="description" content="Software engineer | Software developer | Backend engineer | C# | Typescript | React | Node")
+  meta(name="author" content="Berkay Gursoy")
+  meta(property="og:url" content="https://berkaygursoy.com")
+  meta(property="og:site_name" content="BerkayGursoy")
+  meta(property="og:title" content="BerkayGursoy")
+  meta(property="og:description" content="Software engineer | Software developer | Backend engineer | C# | Typescript | React | Node")
+  link(rel="stylesheet" href="custom.scss")
+  link(rel="stylesheet" href="style.scss")
+  link(rel="preconnect" href="https://fonts.googleapis.com")
+  link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+  link(href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,500&display=swap" rel="stylesheet")
+  script(src="./index.js" type="module" defer)
+  body
+    include components/header.pug
+    include components/links.pug
+    block content
+    block scripts
+  footer
+    include components/footer.pug
