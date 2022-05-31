@@ -12,7 +12,20 @@ window.addEventListener('load', function () {
 });
 
 window.addEventListener('load', function () {
+
+    const width = window.innerWidth || document.documentElement.clientWidth ||
+        document.body.clientWidth;
+
     let textWrapper = document.querySelector('.ml10 .letters');
+
+    if (!textWrapper)
+        return;
+
+    if (width < 900) {
+        textWrapper.innerHTML = "Hi! <br/> I'm Berkay";
+        return;
+    }
+
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
     anime.timeline({ loop: false })
@@ -22,4 +35,8 @@ window.addEventListener('load', function () {
             duration: 1000,
             delay: (el, i) => 350 + (40 * i)
         });
+
+    this.setTimeout(() => {
+        textWrapper.innerHTML = "Hi! I'm Berkay";
+    }, 2000);
 });
