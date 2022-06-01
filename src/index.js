@@ -1,18 +1,25 @@
-import * as bootstrap from 'bootstrap';
+// import * as bootstrap from 'bootstrap';
+import { Collapse } from 'bootstrap';
 
 window.addEventListener('load', function () {
     let path = window.location.pathname.slice(1);
     if (path == '')
         path = 'home';
-    const element = this.document.body.querySelector(`a[data-href=${path}`);
+    const element = this.document.body.querySelectorAll(`a[data-href=${path}`);
     if (element) {
-        element.classList.add('active');
-        element.setAttribute('href', '#');
+        for (const el of element) {
+            el.classList.add('active');
+            el.setAttribute('href', '#');
+        }
     }
 });
 
 window.addEventListener('load', function () {
     let textWrapper = document.querySelector('.ml10 .letters');
+
+    if (!textWrapper)
+        return;
+
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
     anime.timeline({ loop: false })
