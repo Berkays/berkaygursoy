@@ -1,71 +1,122 @@
 extends layout.pug
 
 block content
-  section#about.body-container.container
-    .body-title.text-white.text-center.text-md-start
-      b About Me
-    .row
-      .content.col-12.col-md-8.order-2.order-md-1
-        | Hello! My name is Berkay and I enjoy creating things that live on the internet. I have interest in pretty much anything that involves some form of technology. My passion for computers started with video games when I was couple of years old. This enthusiasm continued with me starting programming with C# and doing hobby projects in most of my free time back in around 2010 which corresponds to over 10 years of programming experience.
-      img.profile-img.col-12.col-md-4.order-1.order-md-2.mx-auto.mb-4.mb-md-0(src="./assets/photo.jpeg" alt="Profile Image")
-    .content
-      | Today, I am still excited for the new improvements, methodologies and the technologies in the field and trying to learn as much as I can.
-      | I have an extra interest mainly for software architecture and backend engineering.
-    .content
-      b Currently, I am actively looking for a job preferably in a Backend Engineering/Software Architecture role.
-    br
-    h2 Work Experience
-    ul.experience-list
-      li 
-        h5.organization-title
-          | Software Engineering Intern @ CODEN
-        hr
-        ul 
-          li 
-            .work-content
-              | Built 5+ end user workflow automation solutions using eBA Workflow Designer taking advantage
-              | of custom scripting using C# and MSSQL.
-          li 
-            .work-content
-              | Built a mobile application prototype enabling access to CODEN services through application in
-              | Xamarin.Android
-      li 
-        h5.organization-title 
-          | Software Engineering Intern @ Hitsoft
-        hr
-        ul 
-          li 
-            .work-content
-              | Took part as a full stack engineer on a hotel loyalty reward system based on libra(diem)
-              | blockchain. Utilized Python and Angular for main hotel application. 
-          li 
-            .work-content
-              | Built an experimental libra
-              | wallet API using Docker containers, VueJS, and ExpressJS framework.
-          li 
-            .work-content
-              | Integrated git, unit tests, docker containerization, JS build systems, CI/CD into existing projects
-              | and made presentation for co-workers about git collaboration and build systems.
-      li 
-        h5.organization-title 
-          | Embedded Firmware/Electronics Engineer @ Biga Organik Tarım Hayvancılık
-        hr
-        ul 
-          li 
-            .work-content
-              | Designed a custom digital circuit that is used in a patented portable thawing & artificial
-              | insemination device which aims to ease and speed up the process. 
-          li 
-            .work-content
-              | Responsible for the engineering of both hardware and firmware (C++) part of the device. Device is expected to
-              | release in 2022.
-      li 
-        h5.organization-title 
-          | Freelance Software Developer May 2013 - present
-        hr
-        ul 
-          li
-            .work-content
-              | Working as freelancer for individuals who need a custom software. Frontend & Backend
-              | development, Mobile application development, Embedded firmware and data processing scripts
-              | are generally the scope of work I have done as a freelancer.
+	section#about.body-container.container
+		.body-title.text-white.text-center.text-md-start
+			b.content-title About Me
+		.row
+			.content.col-12.col-md-8.order-2.order-md-1
+				| Hello! My name is Berkay and I enjoy creating things that live on the internet. I have interest in pretty much anything that involves some form of technology. My passion for computers started with video games when I was couple of years old. This enthusiasm continued with me starting programming with C# and doing hobby projects in most of my free time back in around 2010 which corresponds to over 10 years of programming experience.
+			img.profile-img.col-12.col-md-4.order-1.order-md-2.mx-auto.mb-4.mb-md-0(src="./assets/photo.jpeg" alt="Profile Image")
+		.content
+			| Today, I am still excited for the new improvements, methodologies and the technologies in the field and trying to learn as much as I can.
+			| I have an extra interest mainly for software architecture and backend engineering.
+		.content
+			b Currently, I am actively looking for a job preferably in a Backend Engineering/Software Architecture role.
+		.body-title.text-white.text-center.text-md-start
+			b.content-title Skills
+		.row.p-3
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg' alt='typescript' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg' alt='csharp' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/dotnetcore/dotnetcore-original.svg' alt='dotnetcore' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg' alt='docker' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg' alt='javascript' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain-wordmark.svg' alt='nodejs' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/npm/npm-original-wordmark.svg' alt='npm' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/ubuntu/ubuntu-plain.svg' alt='ubuntu' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nuget/nuget-original.svg' alt='nuget' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg' alt='postgresql' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg' alt='python' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg' alt='react' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg' alt='C' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg' alt='linux' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg' alt='Azure' width='40' height='40')
+			.col-2.col-md-1.ps-0
+				img(src='https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg' alt='git' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg' alt='redis' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://cdn.cdnlogo.com/logos/r/32/rabbitmq.svg' alt='rabbitmq' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-plain.svg' alt='mongodb' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg' alt='nginx' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg' alt='html5' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://cdn.worldvectorlogo.com/logos/pug.svg' alt='pug' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg' alt='sass' width='40' height='40')  
+			.col-2.col-md-1.ps-0
+				img(src='https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain.svg' alt='bootstrap' width='40' height='40')  
+		.body-title.text-white.text-center.text-md-start
+			b.content-title Work Experience
+		ul.experience-list
+			li 
+				h5.organization-title
+					| Software Engineering Intern @ CODEN
+				hr
+				ul 
+					li 
+						.work-content
+							| Built 5+ end user workflow automation solutions using eBA Workflow Designer taking advantage
+							| of custom scripting using C# and MSSQL.
+					li 
+						.work-content
+							| Built a mobile application prototype enabling access to CODEN services through application in
+							| Xamarin.Android
+			li 
+				h5.organization-title 
+					| Software Engineering Intern @ Hitsoft
+				hr
+				ul 
+					li 
+						.work-content
+							| Took part as a full stack engineer on a hotel loyalty reward system based on libra(diem)
+							| blockchain. Utilized Python and Angular for main hotel application. 
+					li 
+						.work-content
+							| Built an experimental libra
+							| wallet API using Docker containers, VueJS, and ExpressJS framework.
+					li 
+						.work-content
+							| Integrated git, unit tests, docker containerization, JS build systems, CI/CD into existing projects
+							| and made presentation for co-workers about git collaboration and build systems.
+			li 
+				h5.organization-title 
+					| Embedded Firmware/Electronics Engineer @ Biga Organik Tarım Hayvancılık
+				hr
+				ul 
+					li 
+						.work-content
+							| Designed a custom digital circuit that is used in a patented portable thawing & artificial
+							| insemination device which aims to ease and speed up the process. 
+					li 
+						.work-content
+							| Responsible for the engineering of both hardware and firmware (C++) part of the device. Device is expected to
+							| release in 2022.
+			li 
+				h5.organization-title 
+					| Freelance Software Developer May 2013 - present
+				hr
+				ul 
+					li
+						.work-content
+							| Working as freelancer for individuals who need a custom software. Frontend & Backend
+							| development, Mobile application development, Embedded firmware and data processing scripts
+							| are generally the scope of work I have done as a freelancer.
