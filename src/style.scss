@@ -94,7 +94,7 @@ a {
 		padding-left: 0.85rem;
 		padding-right: 0.85rem;
 		display: block;
-		transition: color 0.2s ease, transform 0.2s ease;
+		transition: color 0.2s ease;
 		color: #555;
 
 		&.active {
@@ -105,8 +105,7 @@ a {
 
 		&:hover:not(.active) {
 			color: var(--color-bg);
-			transition: color 0.2s ease, transform 0.2s ease;
-			transform: scale(1.1);
+			transition: color 0.2s ease;
 		}
 	}
 }
@@ -161,6 +160,8 @@ section#index {
 	@media only screen and (min-width: 1100px) {
 		padding-left: 9rem;
 	}
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
 section#about {
@@ -182,18 +183,19 @@ section#projects {
 
 	.body-title {
 		h1 {
-			font-size: 5rem;
+			// font-size: 5rem;
 			margin-top: 0;
 			margin-bottom: 0.5rem;
 			color: white;
 		}
 
-		h2 {
-			font-size: 2.5rem;
+		.content-title {
+			font-size: 1.6rem;
 		}
 
 		margin-bottom: 1.5rem;
-		font-size: 2rem;
+		margin-top: 1.5rem;
+		// font-size: 2rem;
 		color: rgb(180, 180, 180);
 	}
 
@@ -204,7 +206,7 @@ section#projects {
 		font-size: 1.25rem;
 		line-height: 2rem;
 		text-indent: 2rem;
-		text-shadow: 0 0 0 var(--color-int), 0 0 1px transparent;
+		text-shadow: 0 0 0 rgb(83, 235, 255), 0 0 1px transparent;
 		text-rendering: optimizeLegibility;
 		letter-spacing: 0.5px;
 		text-align: justify;
@@ -387,9 +389,8 @@ ul.projects-list {
 			font-size: 1.1rem;
 
 			background-color: white;
-			box-shadow: rgba(150, 150, 150, 0.25) 0px 54px 55px, rgba(150, 150, 150, 0.12) 0px -12px 30px,
-				rgba(150, 150, 150, 0.12) 0px 4px 6px, rgba(150, 150, 150, 0.17) 0px 12px 13px,
-				rgba(150, 150, 150, 0.09) 0px -3px 5px;
+			box-shadow: rgba(75, 75, 75, 0.25) 0px 54px 55px, rgba(75, 75, 75, 0.12) 0px -12px 30px,
+				rgba(75, 75, 75, 0.12) 0px 4px 6px, rgba(75, 75, 75, 0.17) 0px 12px 13px, rgba(75, 75, 75, 0.09) 0px -3px 5px;
 			color: black;
 			border: 1px solid #333;
 			padding: 2rem;
@@ -478,7 +479,7 @@ ul.projects-list {
 .ml10 {
 	position: relative;
 	font-weight: 900;
-	font-size: 4em;
+	// font-size: 4em;
 }
 
 .ml10 .text-wrapper {
@@ -487,7 +488,7 @@ ul.projects-list {
 	padding-top: 0.2em;
 	padding-right: 0.05em;
 	padding-bottom: 0.1em;
-	// overflow: hidden;
+	overflow: hidden;
 }
 
 .ml10 .letter {
